@@ -1,0 +1,12 @@
+bin = [
+  { name = "read", path = "src/read.rs" },
+  { name = "read_async", path = "src/read_async.rs" },
+]
+
+[package]
+name = "fileio-test"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio = { version = "1.41.0", features = ["macros", "rt", "rt-multi-thread"] }
